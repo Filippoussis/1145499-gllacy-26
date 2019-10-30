@@ -531,6 +531,11 @@ input[name="slider-toggle"] {
   position: relative;
 }
 
+.popular-goods__item:hover .popular-goods__wrapper,
+.popular-goods__item:hover .button--popular-goods {
+  display: block;
+}
+
 .popular-goods__content,
 .goods-list-content {
   position: relative;
@@ -541,6 +546,7 @@ input[name="slider-toggle"] {
 }
 
 .popular-goods__wrapper {
+  display: none;
   position: absolute;
   top: -10px;
   left: -10px;
@@ -1479,6 +1485,7 @@ input[name="slider-toggle"] {
 }
 
  .button--popular-goods {
+   display: none;
   position: absolute;
   bottom: -30px;
   padding-top: 8px;
