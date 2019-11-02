@@ -118,56 +118,56 @@
         <h2 class="visually-hidden">Фильтр выбора мороженого</h2>
         <form class="filter-form" action="https://echo.htmlacademy.ru" method="POST">
           <div class="filter__row filter__row--top">
-          <fieldset class="filter__fieldset sort">
-            <legend class="filter__legend sort__legend">Сортировка:</legend>
-            <select class="sort-select" name="sort" id="sort">
-              <option class="sort-select__popular" value="popular">по популярности</option>
-            </select>
-          </fieldset>
+            <fieldset class="filter__fieldset sort">
+              <legend class="filter__legend sort__legend">Сортировка:</legend>
+              <select class="sort-select" name="sort" id="sort">
+                <option class="sort-select__popular" value="popular">по популярности</option>
+              </select>
+            </fieldset>
 
-          <fieldset class="filter__fieldset range">
-            <legend class="filter__legend">Цена: 100 руб. - 500 руб.</legend>
-              <div class="range-controls">
-                <div class="scale">
-                  <div class="bar">
-                    <div class="toggle toggle-min"></div>
-                    <div class="toggle toggle-max"></div>
+            <fieldset class="filter__fieldset range">
+              <legend class="filter__legend">Цена: 100 руб. - 500 руб.</legend>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar">
+                      <div class="toggle toggle-min"></div>
+                      <div class="toggle toggle-max"></div>
+                    </div>
                   </div>
                 </div>
-              </div>
-          </fieldset>
+            </fieldset>
 
-          <fieldset class="filter__fieldset fatness">
-            <legend class="filter__legend">Жирность</legend>
-            <div class="fatness-wrapper">
-              <input type="radio" name="fatness" id="fatness-1" value="0%">
-              <label for="fatness-1">0%</label>
-              <input type="radio" name="fatness" id="fatness-2" value="до 10%" checked>
-              <label for="fatness-2">до 10%</label>
-              <input type="radio" name="fatness" id="fatness-3" value="до 30%">
-              <label for="fatness-3">до 30%</label>
-              <input type="radio" name="fatness" id="fatness-4" value="выше 30%">
-              <label class="fatness-4" for="fatness-4">выше 30%</label>
-            </div>
-          </fieldset>
-        </div>
-        <div class="filter__row filter__row--bottom">
-          <fieldset class="filter__fieldset filler">
-            <legend class="filter__legend">Наполнители:</legend>
-            <div class="filler-wrapper">
-              <input type="checkbox" name="chocolate" id="chocolate" checked>
-              <label for="chocolate">шоколадные</label>
-              <input type="checkbox" name="sugar" id="sugar" checked>
-              <label for="sugar">сахарные присыпки</label>
-              <input type="checkbox" name="fruit" id="fruit">
-              <label for="fruit">фрукты</label>
-              <input type="checkbox" name="syrup" id="syrup">
-              <label for="syrup">сиропы</label>
-              <input type="checkbox" name="jam" id="jam">
-              <label for="jam">джемы</label>
-            </div>
-          </fieldset>
-          <button class="filter-button" type="submit">Применить</button>
+            <fieldset class="filter__fieldset fatness">
+              <legend class="filter__legend">Жирность</legend>
+              <div class="fatness-wrapper">
+                <input type="radio" name="fatness" id="fatness-1" value="0%">
+                <label for="fatness-1">0%</label>
+                <input type="radio" name="fatness" id="fatness-2" value="до 10%" checked>
+                <label for="fatness-2">до 10%</label>
+                <input type="radio" name="fatness" id="fatness-3" value="до 30%">
+                <label for="fatness-3">до 30%</label>
+                <input type="radio" name="fatness" id="fatness-4" value="выше 30%">
+                <label class="fatness-4" for="fatness-4">выше 30%</label>
+              </div>
+            </fieldset>
+          </div>
+          <div class="filter__row filter__row--bottom">
+            <fieldset class="filter__fieldset filler">
+              <legend class="filter__legend">Наполнители:</legend>
+              <div class="filler-wrapper">
+                <input type="checkbox" name="chocolate" id="chocolate" checked>
+                <label for="chocolate">шоколадные</label>
+                <input type="checkbox" name="sugar" id="sugar" checked>
+                <label class="sugar" for="sugar">сахарные присыпки</label>
+                <input type="checkbox" name="fruit" id="fruit">
+                <label class="fruit" for="fruit">фрукты</label>
+                <input type="checkbox" name="syrup" id="syrup">
+                <label class="syrup" for="syrup">сиропы</label>
+                <input type="checkbox" name="jam" id="jam">
+                <label class="jam" for="jam">джемы</label>
+              </div>
+            </fieldset>
+            <button class="filter-button" type="submit">Применить</button>
           </div>
         </form>
       </section>
