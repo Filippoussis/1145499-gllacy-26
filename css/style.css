@@ -1204,6 +1204,7 @@ input[name="slider-toggle"] {
   padding-bottom: 8px;
   border-radius: 16px;
   background: rgba(248, 247, 244, 0.2) url(../img/icon-down-dir.svg) 92% 50% no-repeat;
+  border: none;
   color: #ffffff;
   -webkit-appearance: none;
   -moz-appearance: none;
