@@ -38,10 +38,6 @@ img {
   height: auto;
 }
 
-a {
-  text-decoration: none;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -196,6 +192,7 @@ input[name="slider-toggle"] {
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
+  text-decoration: none;
   color: #323232;
 }
 
@@ -245,6 +242,7 @@ input[name="slider-toggle"] {
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
+  text-decoration: none;
   color: #ffffff;
 }
 
@@ -1288,6 +1286,11 @@ input[name="slider-toggle"] {
   background-color: rgba(248, 247, 244, 0.2);
 }
 
+.fatness label,
+.filler label {
+  cursor: pointer;
+}
+
 .fatness label::before {
   position: absolute;
   content: "";
@@ -1381,6 +1384,7 @@ input[name="slider-toggle"] {
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
+  text-decoration: none;
   color: #ffffff;
 }
 
@@ -1436,6 +1440,7 @@ input[name="slider-toggle"] {
   border: none;
   background-image: linear-gradient(#f26843, #e74a35);
   box-shadow: 0 2px 2px 0 #ac1000;
+  text-decoration: none;
   color: #fefefe;
 }
 
