@@ -1206,6 +1206,7 @@ input[name="slider-toggle"] {
   background: rgba(248, 247, 244, 0.2) url(../img/icon-down-dir.svg) 92% 50% no-repeat;
   border: none;
   color: #ffffff;
+  cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
@@ -1626,7 +1627,7 @@ input[name="slider-toggle"] {
   background-color: #ffffff;
 }
 
-.letter input[type="placeholder"] {
+.letter input::placeholder {
   font-weight: 400;
   color: #999999;
 }
