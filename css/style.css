@@ -1528,6 +1528,7 @@ input[name="slider-toggle"] {
 }
 
 .button--contacts {
+  display: block;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 26px;
@@ -1627,11 +1628,6 @@ input[name="slider-toggle"] {
   background-color: #ffffff;
 }
 
-.letter input::placeholder {
-  font-weight: 400;
-  color: #999999;
-}
-
 .sender-name {
   margin: 0;
   margin-bottom: 20px;
@@ -1666,6 +1662,7 @@ input[name="slider-toggle"] {
 ::-moz-placeholder          {color: #999999; font-weight: 400;}/* Firefox 19+ */
 :-moz-placeholder           {color: #999999; font-weight: 400;}/* Firefox 18- */
 :-ms-input-placeholder      {color: #999999; font-weight: 400;}
+
 
  .modal-show {
   display: block;
