@@ -27,7 +27,7 @@
               <div class="catalog-wrapper">
                 <ul class="catalog-list">
                   <li class="catalog__item">
-                    <a class="catalog__link catalo__link-new-product" href="#">Новинки</a>
+                    <a class="catalog__link catalog__link--new-product" href="#">Новинки</a>
                   </li>
                   <li class="catalog__item">
                     <a class="catalog__link" href="catalog.html">Сливочное</a>
@@ -54,19 +54,19 @@
 
           <ul class="user-menu">
             <li class="user-menu__item user-menu__item-1">
-              <a class="user-menu__link user-menu__link-search" href="#"></a>
+              <a class="user-menu__link user-menu__link-search" href="#" aria-label="Переход на форму поиска"></a>
               <div class="search-wrapper">
                 <form class="search" action="https://echo.htmlacademy.ru" method="POST">
-                  <input class="search__input" type="search" placeholder="Крем-брюле">
+                  <input class="search__input" type="search" placeholder="Крем-брюле" aria-label="Поле формы поиска">
                 </form>
               </div>
             </li>
             <li class="user-menu__item user-menu__item-2">
-              <a class="user-menu__link user-menu__link-enter" href="#">Вход</a>
+              <a class="user-menu__link user-menu__link-enter" href="useraccount.html" aria-label="Переход в личный кабинет">Вход</a>
               <div class="user-account-wrapper">
                 <form class="user-account" action="https://echo.htmlacademy.ru" method="POST">
-                  <input class="user-account__input user-account__email" type="email" placeholder="email@example.com">
-                  <input class="user-account__input user-account__password" type="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;">
+                  <input class="user-account__input user-account__email" type="email" placeholder="email@example.com" aria-label="Поле ввода адреса электронной почты пользователя">
+                  <input class="user-account__input user-account__password" type="password" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;" aria-label="Поле ввода пароля пользователя">
                   <div class="user-account-footer">
                     <button class="button button--user-account" type="submit">Войти</button>
                     <div class="help">
@@ -78,13 +78,13 @@
               </div>
             </li>
             <li class="user-menu__item user-menu__item-3">
-              <a class="user-menu__link user-menu__link-cart" href="#">Пусто</a>
+              <a class="user-menu__link user-menu__link-cart" href="cart.html" aria-label="Переход в корзину покупок">Пусто</a>
             </li>
           </ul>
         </div>
 
       <div class="office-hours">С 10 до 20, ежедневно</div>
-      <div class="office-phone">8 812 450-25-25</div>
+      <div class="office-phone"><a class="office-phone__link" href="tel:88124502525">8 812 450-25-25</a></div>
 
     </header>
 
@@ -98,33 +98,33 @@
 
           <ul class="toggle-list">
             <li class="toggle-list__item">
-              <label class="toggle-list__label label-1" for="toggle-1"></label>
+              <label class="toggle-list__label label-1" for="toggle-1" aria-label="Переключить на слайд №1"></label>
             </li>
             <li class="toggle-list__item">
-              <label class="toggle-list__label label-2" for="toggle-2"></label>
+              <label class="toggle-list__label label-2" for="toggle-2" aria-label="Переключить на слайд №2"></label>
             </li>
             <li class="toggle-list__item">
-              <label class="toggle-list__label label-3" for="toggle-3"></label>
+              <label class="toggle-list__label label-3" for="toggle-3" aria-label="Переключить на слайд №3"></label>
             </li>
           </ul>
 
           <ul class="slider-list">
             <li class="slider-list__item slider-1">
-              <img src="img/slider-1.png" width="1045" height="881">
+              <img src="img/slider-1.png" alt="Крем-брюле и пломбир с малиновым джемом" width="1045" height="881">
               <div class="slider__wrapper">
                 <p class="slider__title">Крем-брюле и пломбир с малиновым джемом</p>
                 <a class="button button--slider" href="#">Давайте оба!</a>
               </div>
             </li>
             <li class="slider-list__item slider-2">
-              <img src="img/slider-2.png" width="1065" height="859">
+              <img src="img/slider-2.png" alt="Шоколадный пломбир и лимонный сорбет" width="1065" height="859">
               <div class="slider__wrapper">
                 <p class="slider__title">Шоколадный пломбир и лимонный сорбет</p>
                 <a class="button button--slider" href="#">Давайте оба!</a>
               </div>
             </li>
             <li class="slider-list__item slider-3">
-              <img src="img/slider-3.png" width="1079" height="854">
+              <img src="img/slider-3.png" alt="Пломбир с помадкой и клубничный щербет" width="1079" height="854">
               <div class="slider__wrapper">
                 <p class="slider__title slider__title-3">Пломбир с помадкой и клубничный щербет</p>
                 <a class="button button--slider" href="#">Давайте оба!</a>
@@ -137,7 +137,7 @@
         <section class="promotions">
           <h2 class="visually-hidden">Выгодные промо-акции при покупке мороженого</h2>
           <ul class="promotions__list">
-            <li class="promotion promotion-raspberry">
+            <li class="promotion promotion--raspberry">
               <p class="promotion__slogan">Малинка даром!</p>
               <p class="promotion__desc">
                 При покупке 2 кг любого фруктового мороженого,
@@ -148,7 +148,7 @@
               </span>
             </li>
 
-            <li class="promotion promotion-chocolate">
+            <li class="promotion promotion--chocolate">
               <p class="promotion__slogan">Шоколадки даром!</p>
               <p class="promotion__desc">
                 При покупке 2 кг пломбира, добавим в ваш заказ упаковку
@@ -165,41 +165,36 @@
           <h2 class="visually-hidden">Популярное мороженое</h2>
           <ul class="popular-goods__list">
             <li class="popular-goods__item popular-goods__item-1">
-              <div class="popular-goods__wrapper"></div>
-                <div class="popular-goods__content">
-                  <h3 class="popular-goods__title"><a class="popular-goods__link" href="">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
-                  <img src="img/ice-cream-1.png" alt="" width="267" height="267">
-                  <span class="popular-goods__price">310</span>
-                  <a class="button button--popular-goods" href="#">Быстрый просмотр</a>
-                </div>
-
+              <div class="popular-goods__content">
+                <h3 class="popular-goods__title"><a class="popular-goods__link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
+                <img src="img/ice-cream-1.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
+                <a class="button button--popular-goods" href="#">Быстрый просмотр</a>
+              </div>
+              <span class="popular-goods__price">310</span>
             </li>
             <li class="popular-goods__item popular-goods__item-2">
-              <div class="popular-goods__wrapper"></div>
-                <div class="popular-goods__content">
-                  <h3 class="popular-goods__title"><a class="popular-goods__link" href="">Сливочно-кофейное с кусочками шоколада</a></h3>
-                  <img src="img/ice-cream-2.png" alt="" width="267" height="267">
-                  <span class="popular-goods__price">380</span>
-                  <a class="button button--popular-goods" href="#">Быстрый просмотр</a>
-                </div>
+              <div class="popular-goods__content">
+                <h3 class="popular-goods__title"><a class="popular-goods__link" href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
+                <img src="img/ice-cream-2.png" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
+                <a class="button button--popular-goods" href="#">Быстрый просмотр</a>
+              </div>
+              <span class="popular-goods__price">380</span>
             </li>
             <li class="popular-goods__item popular-goods__item-3">
-              <div class="popular-goods__wrapper"></div>
-                <div class="popular-goods__content">
-                  <h3 class="popular-goods__title"><a class="popular-goods__link" href="">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
-                  <img src="img/ice-cream-3.png" alt="" width="267" height="267">
-                  <span class="popular-goods__price">355</span>
-                  <a class="button button--popular-goods" href="#">Быстрый просмотр</a>
-                </div>
+              <div class="popular-goods__content">
+                <h3 class="popular-goods__title"><a class="popular-goods__link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
+                <img src="img/ice-cream-3.png" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
+                <a class="button button--popular-goods" href="#">Быстрый просмотр</a>
+              </div>
+              <span class="popular-goods__price">355</span>
             </li>
             <li class="popular-goods__item popular-goods__item-4">
-              <div class="popular-goods__wrapper"> </div>
-                <div class="popular-goods__content">
-                  <h3 class="popular-goods__title"><a class="popular-goods__link" href="">Сливочное крем-брюле с карамельной подливкой</a></h3>
-                  <img src="img/ice-cream-4.png" alt="" width="267" height="267">
-                  <span class="popular-goods__price">415</span>
-                  <a class="button button--popular-goods" href="#">Быстрый просмотр</a>
-                </div>
+              <div class="popular-goods__content">
+                <h3 class="popular-goods__title"><a class="popular-goods__link" href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
+                <img src="img/ice-cream-4.png" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
+                <a class="button button--popular-goods" href="#">Быстрый просмотр</a>
+              </div>
+              <span class="popular-goods__price">415</span>
             </li>
           </ul>
         </section>
@@ -207,23 +202,23 @@
         <section class="advantages">
           <h2 class="advantages__title">Магазин Глэйси – это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
           <ul class="advantages__list">
-            <li class="advantages__item advantages__item-1">
+            <li class="advantages__item advantages__item--ice-cream">
               <p>Все наше мороженое изготавливается на собственном
               производстве, с использованием современного оборудования
               и проверенных временем технологий.</p>
             </li>
-            <li class="advantages__item advantages__item-2">
+            <li class="advantages__item advantages__item--cow">
               <p>Закупка ингредиентов производится только у проверенных
               фермерских хозяйств и компаний, с которыми нас связывает
               долговременное сотрудничество.</p>
             </li>
-            <li class="advantages__item advantages__item-3">
+            <li class="advantages__item advantages__item--eco">
               <p>Для приготовления мороженого используются настоящие сливки
               и молоко высочайшего качества. Все дополнительные
               ингредиенты и добавки произведены из натурального,
               экологически чистого сырья.</p>
             </li>
-            <li class="advantages__item advantages__item-4">
+            <li class="advantages__item advantages__item--thermometer">
               <p>Доставка нашего мороженого до заказчиков осуществляется
               в специальном термопаке, который не дает мороженому
               растаять в пути и позволяет сохранить превосходный вкус.</p>
@@ -246,7 +241,7 @@
               и не слать всякой ненужной ерунды. Честно =)
               </p>
               <form class="subscribe__form" action="https://echo.htmlacademy.ru" method="POST">
-                <input class="subscribe__input" type="email" name="email" placeholder="email@example.com">
+                <input class="subscribe__input" type="email" name="email" placeholder="email@example.com" aria-label="Поле ввода адреса электронной почты пользователя">
                 <button class="button button--subscribe" type="submit">Отправить</button>
               </form>
             </section>
@@ -257,7 +252,7 @@
       <section class="contacts">
         <h2 class="visually-hidden">Контактная информация</h2>
         <div class="container contacts__static-map">
-          <img src="img/map.jpg" alt="" height="430">
+          <img src="img/map.jpg" alt="Адрес главного офиса и офлайн-магазина: ул. Большая Конюшенная 19/8, Санкт-Петербург" height="430">
         </div>
         <iframe class="contacts__live-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003244!2d30.320858716317513!3d59.93871916905395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1572118901429!5m2!1sru!2sru"></iframe>
         <div class="contacts-info">
@@ -269,9 +264,9 @@
             19/8, Санкт-Петербург</p>
           <p class="contacts-info__caption caption-tel">
             Для заказов по телефону:</p>
-          <p class="contacts-info__tel">8 812 450-25-25</p>
+          <p class="contacts-info__tel"><a class="contacts-info__link" href="tel:88124502525">8 812 450-25-25</a></p>
           <p class="contacts-info__caption caption-time">(с 10 до 20 ежедневно)</p>
-          <p class="contacts-button__position"><a class="button button--contacts" href="#">Форма обратной связи</a></p>
+          <p class="contacts-button__position"><a class="button button--contacts letter-link" href="writeus.html">Форма обратной связи</a></p>
         </div>
       </section>
 
@@ -280,10 +275,10 @@
     <footer class="container main-footer">
 
       <ul class="socials">
-        <li class="socials-link__item"><a class="socials-link twitter" href="#"></a></li>
-        <li class="socials-link__item"><a class="socials-link instagramm" href="#"></a></li>
-        <li class="socials-link__item"><a class="socials-link facebook" href="#"></a></li>
-        <li class="socials-link__item"><a class="socials-link vk" href="#"></a></li>
+        <li class="socials-link__item"><a class="socials-link twitter" href="#" aria-label="Переход на аккаунт сайта в Twitter"></a></li>
+        <li class="socials-link__item"><a class="socials-link instagramm" href="#" aria-label="Переход на аккаунт сайта в Instagramm"></a></li>
+        <li class="socials-link__item"><a class="socials-link facebook" href="#" aria-label="Переход на аккаунт сайта в Facebook"></a></li>
+        <li class="socials-link__item"><a class="socials-link vk" href="#" aria-label="Переход на аккаунт сайта в VK"></a></li>
       </ul>
 
       <ul class="service-info">
@@ -309,6 +304,29 @@
       </ul>
 
     </footer>
-</div>
+  </div>
+
+    <section class="modal modal-letter">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <p class="letter__title">Мы обязательно вам ответим!</p>
+      <form class="letter" action="https://echo.htmlacademy.ru" method="POST">
+        <div class="sender">
+          <p class="sender-name">
+            <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+          </p>
+          <p class="sender-email">
+            <input type="email" name="email" id="email" placeholder="email@example.com">
+          </p>
+        </div>
+        <p class="letter-text">
+          <textarea name="letter-text" id="letter-text" placeholder="В свободной форме"></textarea>
+        </p>
+        <div class="button-position"><button class="button button--letter" type="submit">Отправить</button></div>
+      </form>
+      <button class="modal-close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+    </section>
+    <script src="js/popup.js"></script>
   </body>
 </html>
