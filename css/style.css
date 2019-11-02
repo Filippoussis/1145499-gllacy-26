@@ -1356,7 +1356,7 @@ input[name="slider-toggle"] {
 
 .filter-button {
   display: block;
-  margin-top: auto;
+  margin-top: 23px;
   padding-top: 7px;
   padding-bottom: 7px;
   padding-left: 26px;
