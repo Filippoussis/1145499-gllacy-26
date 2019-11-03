@@ -516,11 +516,11 @@ input[name="slider-toggle"] {
 }
 
 .promotion--raspberry {
-  background: url(../img/raspberry-background.png) 50% 50% no-repeat;
+  background: #8e9593 url(../img/raspberry-background.png) 50% 50% no-repeat;
 }
 
 .promotion--chocolate {
-  background: url(../img/chocolate-background.png) 50% 50% no-repeat;
+  background: #8e9593 url(../img/chocolate-background.png) 50% 50% no-repeat;
 }
 
 .popular-goods {
@@ -650,7 +650,7 @@ input[name="slider-toggle"] {
   padding-top: 5px;
   padding-left: 19px;
   padding-right: 24px;
-  background: url(../img/waffle-big.png) 50% 50% no-repeat;
+  background: #8e9593 url(../img/waffle-big.png) 50% 50% no-repeat;
 }
 
 .advantages__title {
@@ -720,7 +720,7 @@ input[name="slider-toggle"] {
   width: 560px;
   min-height: 220px;
   padding: 24px 20px;
-  background: url(../img/strawberry-background.png) 50% 50% no-repeat;
+  background: #8e9593 url(../img/strawberry-background.png) 50% 50% no-repeat;
 }
 
 .news__title {
